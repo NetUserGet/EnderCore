@@ -239,7 +239,7 @@ public class SpecialTooltipHandler {
       unlocalizedNameForTooltip = ((IResourceTooltipProvider) itemstack.getItem()).getUnlocalizedNameForTooltip(itemstack);
     }
     if (unlocalizedNameForTooltip == null) {
-      unlocalizedNameForTooltip = itemstack.getItem().getTranslationKey(itemstack);
+      unlocalizedNameForTooltip = itemstack.getItem().getUnlocalizedName(itemstack);
     }
     return unlocalizedNameForTooltip;
   }

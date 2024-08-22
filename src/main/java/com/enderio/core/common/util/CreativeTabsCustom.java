@@ -6,7 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class CreativeTabsCustom extends CreativeTabs {
+public abstract class CreativeTabsCustom extends CreativeTabs {
 
   private @Nonnull ItemStack displayStack = ItemStack.EMPTY;
 
@@ -41,7 +41,7 @@ public class CreativeTabsCustom extends CreativeTabs {
     return this;
   }
 
-  @Override
+  //@Override
   public @Nonnull ItemStack createIcon() {
     return displayStack;
   }
